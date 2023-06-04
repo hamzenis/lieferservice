@@ -8,7 +8,7 @@ export default function Navigation() {
       <div className="d-flex justify-content-between align-items-center">
         <Link legacyBehavior href="/">
           <a>
-            <Image src={'/bilder/logo.png'} alt='logo' width={180} height={75} />
+            <Image src={'/bilder/logo1.png'} alt='logo' width={160} height={80} />
           </a>
         </Link>
         <Link legacyBehavior href="/warenkorb">

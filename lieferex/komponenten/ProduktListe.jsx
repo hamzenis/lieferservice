@@ -8,7 +8,7 @@ export default function ProduktListe({ produkte }) {
                 {produkte?.map((produkt) => (
                     <div key={produkt.name} className="mt-3 col">
                         <Card>
-                            <Link href={`/produkte/${produkt.url}`} passHref>
+                            <Link legacyBehavior href={`/produkte/${produkt.url}`} passHref>
                                 <a>
                                     <Card.Img variant="top" src={produkt.bild} />
                                 </a>
