@@ -1,8 +1,11 @@
+import ProduktListe from "@/komponenten/ProduktListe";
+import Slider from "../komponenten/Slider";
 
 export default function Home() {
   return (
     <div>
-    <h1>Essen</h1>
+      <Slider/>
+      <ProduktListe/>
     </div>
   )
 }
