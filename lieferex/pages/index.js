@@ -2,13 +2,18 @@ import ProduktListe from "../komponenten/ProduktListe";
 import Slider from "../komponenten/Slider";
 import Produkt from "../models/Produkt";
 import mongodb from "../utils/mongodb";
+import { motion } from "framer-motion";
 
 export default function Home({ produkte }) {
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0, x:-50}}
+    animate={{ opacity: 1, x: 0}}
+    transition={{type: "spring", stiffness: 200}}
+    >
       <Slider/>
       <ProduktListe produkte={produkte}/>
-    </div>
+    </motion.div>
   )
 }
 

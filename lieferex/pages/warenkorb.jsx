@@ -12,19 +12,25 @@ import {
 } from "@paypal/react-paypal-js";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { toast } from 'react-toastify'
+import { motion } from "framer-motion";
 
 export default function Warenkorb() {
   const dispatch = useDispatch()
   const warenkorb = useSelector((state) => state.warenkorb)
-  const clientID = "AclUeLeq_G2Hsyf_oBeMyXZ6KOFg4VhPJyN4-8PVFdreFcGEZ79a1a_vEmMpkyy-GQI5yls0-2sMRASi"
+  const clientID = "AfJmFkJvFHANmUrQkyVbYWZ_CGUZ8d7naJ9KcB1HXUHhB0T-RsSXDQUD-7OJRqAsdjRllsEj8HxRnC0P"
   const [kasse, setKasse] = useState(false);
   const router = useRouter();
 
   const entfernen = (produkt) => {
     dispatch(loescheProdukt(produkt))
+    toast.error(produkt.name +" wurde entfernt!",{
+      position: "top-center",
+      autoClose: 3000
+    })
   }
 
-  const amount = warenkorb.gesamtbetrag;
+  const amount = warenkorb.gesamtbetrag.toFixed(2);
   const currency = "EUR";
   const style = {
     "layout": "vertical",
@@ -86,12 +92,19 @@ export default function Warenkorb() {
         onApprove={function (data, actions) {
           return actions.order.capture().then(function (details) {
             const kunde = details.purchase_units[0].shipping;
+            //console.log(kunde)
             erstelleBestellung({
               kunde: kunde.name.full_name,
-              adresse: kunde.address.address_line_1 + ", "+ kunde.address.admin_area_1,
+              adresse: kunde.address.address_line_1 + ", "+ kunde.address.admin_area_2,
               betrag: warenkorb.gesamtbetrag,
               status: 0,
-              zahlung: 1
+              zahlung: 1,
+              produkte: warenkorb.produkte.map((produkt) =>(
+                {
+                  name: produkt.name, menge: produkt.menge, extras:
+                  produkt.extras.map(extra => (extra.text))
+                }
+              )),
             });
           });
         }}
@@ -101,7 +114,11 @@ export default function Warenkorb() {
   }
 
   return (
-    <div>
+    <motion.div
+        initial={{ y: -300}}
+        animate={{ y: 0}}
+        transition={{type: "spring", stiffness: 120}}
+        >
       {warenkorb.wAnzahl === 0 ? (
         <h2>Der Warenkorb ist leer!</h2>
       ) : (
@@ -180,6 +197,6 @@ export default function Warenkorb() {
 
         </div>
       )}
-    </div>
+    </motion.div>
   )
 }

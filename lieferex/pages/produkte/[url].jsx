@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import { addProdukte } from '../../redux/warenkorbSlice';
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/router';
+import { motion } from "framer-motion";
 
 export default function Produktseite({produkt}) {
 
@@ -44,9 +45,13 @@ export default function Produktseite({produkt}) {
         )
     }
     return (
-        <div>
+        <motion.div
+        initial={{ y: -300}}
+        animate={{ y: 0}}
+        transition={{type: "spring", stiffness: 120}}
+        >
             <div>
-                <Link legacy legacyBehavior href="/">
+                <Link legacyBehavior href="/">
                     <a className='text-dark'>
                         ← zurück zur Übersicht
                     </a>
@@ -93,7 +98,7 @@ export default function Produktseite({produkt}) {
                     </ListGroup>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
