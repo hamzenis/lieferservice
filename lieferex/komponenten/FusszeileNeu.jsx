@@ -35,16 +35,10 @@ export default function Fusszeile() {
 
                             <ul className="list-unstyled mb-0">
                                 <li>
-                                    <a href="#!" className="text-white">Github</a>
+                                    <a href="https://github.com/kejvi21" className="text-white">Github</a>
                                 </li>
                                 <li>
                                     <a href="#!" className="text-white">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 4</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,16 +50,10 @@ export default function Fusszeile() {
 
                             <ul className="list-unstyled mb-0">
                                 <li>
-                                    <a href="#!" className="text-white">Github</a>
+                                    <a href="https://github.com/hamzenis/" className="text-white">Github</a>
                                 </li>
                                 <li>
                                     <a href="#!" className="text-white">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 4</a>
                                 </li>
                             </ul>
                         </div>
@@ -82,12 +70,7 @@ export default function Fusszeile() {
                                 <li>
                                     <a href="#!" className="text-white">Link 2</a>
                                 </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 4</a>
-                                </li>
+
                             </ul>
                         </div>
 
