@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 export default function Warenkorb() {
   const dispatch = useDispatch()
   const warenkorb = useSelector((state) => state.warenkorb)
-  const clientID = "AfJmFkJvFHANmUrQkyVbYWZ_CGUZ8d7naJ9KcB1HXUHhB0T-RsSXDQUD-7OJRqAsdjRllsEj8HxRnC0P"
+  const clientID = "AclUeLeq_G2Hsyf_oBeMyXZ6KOFg4VhPJyN4-8PVFdreFcGEZ79a1a_vEmMpkyy-GQI5yls0-2sMRASi"
   const [kasse, setKasse] = useState(false);
   const router = useRouter();
 
