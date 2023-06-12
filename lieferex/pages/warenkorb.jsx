@@ -120,13 +120,19 @@ export default function Warenkorb() {
             transition={{ type: "spring", stiffness: 120 }}
         >
             {warenkorb.wAnzahl === 0 ? (
-                <div>
-                    <div className="row m-4">
 
+                <div className="row">
+
+                    <div className="row m-4">
                         <h2>Der Warenkorb ist leer!</h2>
                     </div>
-                    <div className="row m-5">
+
+                    <div className="row m-5"> {/* Placeholder */}
+                    </div> 
+
+                    <div className="row m-5"> {/* Placeholder */}
                     </div>
+
                 </div>
             ) : (
 

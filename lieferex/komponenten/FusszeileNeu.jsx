@@ -1,3 +1,6 @@
+import Link from 'next/link'
+
+
 export default function Fusszeile() {
     return (
         <footer className="bg-dark text-center text-white">
@@ -38,7 +41,7 @@ export default function Fusszeile() {
                                     <a href="https://github.com/kejvi21" className="text-white">Github</a>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-white">Link 2</a>
+                                    <a href="mailto:kejvi.hysenbelli@stud.fra-uas.de" className="text-white">Email</a>
                                 </li>
                             </ul>
                         </div>
@@ -53,7 +56,7 @@ export default function Fusszeile() {
                                     <a href="https://github.com/hamzenis/" className="text-white">Github</a>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-white">Link 2</a>
+                                    <a href="mailto:hamzenis.kryeziu@stud.fra-uas.de" className="text-white">Email</a>
                                 </li>
                             </ul>
                         </div>
@@ -61,14 +64,14 @@ export default function Fusszeile() {
 
 
                         <div className="col-4">
-                            <h5 className="text-uppercase">Hicham Nachname</h5>
+                            <h5 className="text-uppercase">Hicham Boulaayad</h5>
 
                             <ul className="list-unstyled mb-0">
                                 <li>
                                     <a href="#!" className="text-white">Github</a>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-white">Link 2</a>
+                                    <a href="mailto:hicham.boulaayad@stud.fra-uas.de" className="text-white">Email</a>
                                 </li>
 
                             </ul>
@@ -76,6 +79,33 @@ export default function Fusszeile() {
 
 
                     </div>
+
+
+
+                    <div className="row p-5">
+                        <div className="d-flex justify-content-center">
+                            <div className="col-4">
+                                <ul className="list-unstyled">
+                                    <li>
+                                        <Link legacyBehavior href="/impressum">
+                                            <a>
+                                                Impressum
+                                            </a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link legacyBehavior href="/datenschutz">
+                                            <a>
+                                                Datenschutz
+                                            </a>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </section>
 

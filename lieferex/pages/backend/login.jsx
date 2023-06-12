@@ -11,7 +11,7 @@ export default function login() {
 
     const login = async () => {
         try {
-            await axios.post("http://localhost:3000/api/login",{
+            await axios.post("http://localhost:3000/api/login", {
                 benutzer,
                 passwort
             })
@@ -23,6 +23,9 @@ export default function login() {
 
     return (
         <div>
+            <div className="row m-5"> {/* Placeholder */}
+            </div>
+            
             <h1>Login</h1>
             {error && <p className="text-danger">Login fehlgeschlagen</p>}
             <div className="row mt-4">
@@ -41,6 +44,9 @@ export default function login() {
                         Login
                     </Button>
                 </Form>
+
+                <div className="row m-5">
+                </div>
             </div>
         </div>
     )
