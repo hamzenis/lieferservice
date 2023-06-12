@@ -16,7 +16,7 @@ export default function Fusszeile() {
                 </section>
 
                 <div className="d-flex mb-4 justify-content-center text-secondary text-white">
-                    <h6>🥡 LieferEX | 📱 069 83 63 549 | ⏱️ 10:00 - 22:00</h6>
+                    <h6>🥡 LieferEX | 📱 <a href="tel:0698363549" className="text-white">069 83 63 549</a> | ⏱️ 10:00 - 22:00</h6>
                 </div>
 
                 <section className="mb-4 text-white">
@@ -68,7 +68,7 @@ export default function Fusszeile() {
 
                             <ul className="list-unstyled mb-0">
                                 <li>
-                                    <a href="#!" className="text-white">Github</a>
+                                    <a href="https://github.com/Hicham-stud" className="text-white">Github</a>
                                 </li>
                                 <li>
                                     <a href="mailto:hicham.boulaayad@stud.fra-uas.de" className="text-white">Email</a>
