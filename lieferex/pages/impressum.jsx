@@ -43,8 +43,8 @@ export default function Impressum() {
 
                 <div className="col">
                     <p>
-                        Dieses Projekt ist entstanden in dem Modul "Programming Exercise"
-                        aus dem Studiengang "Informatik B.Sc." an der Frankfurt University of Applied Sciences
+                        Dieses Projekt ist entstanden in dem Modul {"Programming Exercise"}
+                        aus dem Studiengang {"Informatik B.Sc."} an der Frankfurt University of Applied Sciences
                     </p>
                     <p>
                         Angaben gem. § 5 TMG (Telemediengesetz) vom 01.03.2007 in der Fassung vom 26.02.2007.
@@ -52,7 +52,7 @@ export default function Impressum() {
 
                     <h3>Haftungshinweis</h3>
                     <p>
-                        Zur Vereinfachung wird die Frankfurt University of Applied Sciences im Folgenden als "Hochschule" bezeichnet.
+                        Zur Vereinfachung wird die Frankfurt University of Applied Sciences im Folgenden als {"Hochschule"} bezeichnet.
                         Folgender Haftungsausschluss bezieht sich auf die von der Hochschule verwalteten
                         und gepflegten Internetseiten. Für angegliederte und extern gepflegte Seiten sind die jeweiligen Autoren verantwortlich.
                     </p>
@@ -74,7 +74,7 @@ export default function Impressum() {
 
                     <h3>2. Verweise und Links</h3>
                     <p>
-                        Bei direkten oder indirekten Verweisen auf fremde Internetseiten ("Links"), die außerhalb des Verantwortungsbereiches der Hochschule liegen,
+                        Bei direkten oder indirekten Verweisen auf fremde Internetseiten {("Links")}, die außerhalb des Verantwortungsbereiches der Hochschule liegen,
                         handelt es sich um fremde Angebote, auf deren inhaltliche Gestaltung die Hochschule keinen Einfluss hat.
                         Eine Haftungsverpflichtung würde ausschließlich in dem Fall in Kraft treten, in dem die Hochschule von den Inhalten Kenntnis hat
                         und es ihr technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.
