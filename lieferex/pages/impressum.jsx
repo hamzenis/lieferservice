@@ -43,8 +43,7 @@ export default function Impressum() {
 
                 <div className="col">
                     <p>
-                        Dieses Projekt ist entstanden in dem Modul {"Programming Exercise"}
-                        aus dem Studiengang {"Informatik B.Sc."} an der Frankfurt University of Applied Sciences
+                        Dieses Projekt ist entstanden in dem Modul {"Programming Exercise"} aus dem Studiengang {"Informatik B.Sc."} an der Frankfurt University of Applied Sciences
                     </p>
                     <p>
                         Angaben gem. § 5 TMG (Telemediengesetz) vom 01.03.2007 in der Fassung vom 26.02.2007.
