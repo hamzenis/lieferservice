@@ -10,7 +10,7 @@ export default function Bestellung({ bestellungen }) {
     const statusUpdate = async (id, aktuellerStatus) => {
         try {
             if (aktuellerStatus <= 2) {
-                await axios.put(`https://liefer-ex.de/api/bestellungen/` + id, { status: aktuellerStatus + 1 });
+                await axios.put(`http://localhost:3000/api/bestellungen/` + id, { status: aktuellerStatus + 1 });
                 router.reload();
             }
         } catch (error) {
@@ -20,7 +20,7 @@ export default function Bestellung({ bestellungen }) {
 
     const bestellungEntfernen = async (id) => {
         try {
-            await axios.delete(`https://liefer-ex.de/api/bestellungen/` + id);
+            await axios.delete(`http://localhost:3000/api/bestellungen/` + id);
             router.reload();
         } catch (error) {
             console.log(error)
@@ -81,7 +81,7 @@ export async function getServerSideProps(ctx) {
             }
         }
     }
-    const res = await axios.get(`https://liefer-ex.de/api/bestellungen`);
+    const res = await axios.get(`http://localhost:3000/api/bestellungen`);
     return {
         props: { bestellungen: res.data },
     };

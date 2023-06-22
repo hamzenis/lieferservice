@@ -39,7 +39,7 @@ export default function Warenkorb() {
 
     const erstelleBestellung = async (data) => {
         try {
-            const res = await axios.post("https://liefer-ex.de/api/bestellungen", data);
+            const res = await axios.post("http://localhost:3000/api/bestellungen", data);
             if (res.status === 201) {
                 dispatch(leeren());
                 router.push(`/bestellungen/${res.data._id}`);
