@@ -16,7 +16,6 @@
 /build
 
 # misc
-.DS_Store
 *.pem
 
 # debug
@@ -29,11 +28,7 @@ yarn-error.log*
 
 # vercel
 .vercel
-.env
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-#MAC OS
-.DS_Store
