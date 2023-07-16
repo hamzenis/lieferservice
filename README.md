@@ -206,6 +206,14 @@ Now we run PM2 to start our project:
 cd /var/www/lieferservice/lieferex
 pm2 start npm --name name_of_app -- start
 ```
+If you want to restart your instance with a scheduled time, you can use the following command (you need to change the time):
+
+```bash
+pm2 start npm --name name_of_app -- start --cron-restart="0 2 * * *"
+```
+
+At 02:00 every day, the instance will be restarted.\
+Use this website [https://crontab.guru/](https://crontab.guru/), if you need help for the cron syntax.
 
 ### Populate Database with data
 
